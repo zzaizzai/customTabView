@@ -34,12 +34,15 @@ struct HouseView: View {
                         }
                         
                         
-                        ForEach(0 ..< 100 ) { item in
+                        ForEach(0 ..< 20 ) { item in
                             HStack{
                                 Spacer()
                                 Text("\(item)")
                                 Spacer()
                             }
+                            .padding()
+                            .background(Color.init(white: 0.9))
+                            .cornerRadius(20)
                         }
                         
                         Button {
