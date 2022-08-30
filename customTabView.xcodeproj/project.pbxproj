@@ -14,6 +14,7 @@
 		A6B29B4128BE0BA60075DDB0 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B29B4028BE0BA60075DDB0 /* MainTabView.swift */; };
 		A6B29B4328BE12210075DDB0 /* HouseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B29B4228BE12210075DDB0 /* HouseView.swift */; };
 		A6B29B4528BE2BF60075DDB0 /* NextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B29B4428BE2BF60075DDB0 /* NextView.swift */; };
+		A6B29B4828BE464D0075DDB0 /* ValuesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B29B4728BE464D0075DDB0 /* ValuesModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		A6B29B4228BE12210075DDB0 /* HouseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseView.swift; sourceTree = "<group>"; };
 		A6B29B4428BE2BF60075DDB0 /* NextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextView.swift; sourceTree = "<group>"; };
 		A6B29B4628BE35E40075DDB0 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A6B29B4728BE464D0075DDB0 /* ValuesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValuesModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				A6B29B3428BE0AF60075DDB0 /* ContentView.swift */,
 				A6B29B4028BE0BA60075DDB0 /* MainTabView.swift */,
 				A6B29B4228BE12210075DDB0 /* HouseView.swift */,
+				A6B29B4728BE464D0075DDB0 /* ValuesModel.swift */,
 				A6B29B4428BE2BF60075DDB0 /* NextView.swift */,
 				A6B29B3628BE0AF80075DDB0 /* Assets.xcassets */,
 				A6B29B3828BE0AF80075DDB0 /* Preview Content */,
@@ -149,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6B29B4128BE0BA60075DDB0 /* MainTabView.swift in Sources */,
+				A6B29B4828BE464D0075DDB0 /* ValuesModel.swift in Sources */,
 				A6B29B4528BE2BF60075DDB0 /* NextView.swift in Sources */,
 				A6B29B4328BE12210075DDB0 /* HouseView.swift in Sources */,
 				A6B29B3528BE0AF60075DDB0 /* ContentView.swift in Sources */,

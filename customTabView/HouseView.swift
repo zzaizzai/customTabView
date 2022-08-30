@@ -7,19 +7,15 @@
 
 import SwiftUI
 
-class HouseViewModel : ObservableObject {
-
-    @Published var count = 0
-}
 
 struct HouseView: View {
     
-    
-    @ObservedObject var vm = HouseViewModel()
+    @EnvironmentObject var value : ValuesModel
     @Binding var countForScroll : Int
     
     @Binding var showNextPage : Bool
     
+
     var body: some View {
         NavigationView{
             ScrollView {
@@ -51,17 +47,23 @@ struct HouseView: View {
                             Text("show next page")
                         }
                     }
-                    .onReceive(vm.$count) { XX in
+                    .onReceive(value.$count) { XX in
                         withAnimation {
                             ScrollViewProxy.scrollTo("Empty", anchor: .top)
                         }
                     }
                     .onChange(of: countForScroll) { newValue in
-                        vm.count += 1
+                        value.count += 1
                     }
                 }
 
             }
+//            .safeAreaInset(edge: .top, content: {
+//                HStack{
+//                    Text("\(self.countForScroll)")
+//                    Text("page: \(value.count)")
+//                }
+//            })
             .navigationBarHidden(true)
         }
         

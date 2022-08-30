@@ -7,8 +7,10 @@
 
 import SwiftUI
 
+
 struct MainTabView: View {
     
+    @EnvironmentObject var value : ValuesModel
     
     @State var showNextPage = false
     init(){
@@ -78,5 +80,7 @@ struct MainTabView: View {
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         MainTabView()
+            .environmentObject(ValuesModel())
+            
     }
 }

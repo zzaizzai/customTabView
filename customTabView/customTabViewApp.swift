@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct customTabViewApp: App {
+    
     var body: some Scene {
         WindowGroup {
             MainTabView()
+                .environmentObject(ValuesModel())
         }
     }
 }
